@@ -1,0 +1,25 @@
+<div *ngIf="truckData">
+    <p-card [style]="{width: '360px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <div>
+                <b class="text-center">{{truckData?.title}}</b>
+            </div>
+            <img src="{{truckData?.image}}" alt="Ms dhoni" width="200" height="200">
+        </p-header>
+        <div>
+            <div>
+                <b>Capacity: </b>{{truckData?.capacity}}
+            </div>
+            <div>
+                <b>Size: </b>{{truckData?.size}}
+            </div>
+
+            <h2>{{truckData?.price | currency:'INR'}}</h2>
+        </div>
+        <p-footer>
+            <button pButton type="button" label="Complete Order" style="margin-right: .25em"
+                (click)="completeOrder(truckData?.id)"></button>
+
+        </p-footer>
+    </p-card>
+</div>

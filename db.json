@@ -1,0 +1,32 @@
+{
+  "orderDetails": [],
+  "typeOfTrucks": [
+    {
+      "id": 1,
+      "title": "PICKUP / DOST / SUPER ACE / 8FT",
+      "price": 2000,
+      "image": "assets/truck2.jpg",
+      "capacity": "1200 kgs",
+      "size": "8.2ft x 4.9ft x 4.9ft"
+    },
+    {
+      "id": 2,
+      "title": "TATA ACE",
+      "price": 1000,
+      "image": "assets/truck1.jpg",
+      "capacity": "750 kgs",
+      "size": " 7.2ft x 4.9ft x 4.9ft"
+    },
+    {
+      "id": 3,
+      "title": "TATA 407",
+      "price": 5000,
+      "image": "assets/truck3.jpg",
+      "capacity": "5500 kg",
+      "size": " 9.5ft x 5.5ft x 6ft"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

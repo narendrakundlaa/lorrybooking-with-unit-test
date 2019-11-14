@@ -1,0 +1,13 @@
+<!-- <div *ngIf="formGroup" [formGroup]="formGroup" class="container">
+    <div class="form-group">
+        <label for="{{name}}">{{upper | titlecase}} </label>
+        <input [attr.type]="type || 'text'" [formControlName]="name" class="form-control" id="{{name}}" name="{{name}}"
+            [attr.placeholder]="placeholder | titlecase" />
+    </div>
+</div> -->
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <span class="ui-float-label" style="float: left;">
+        <input id="float-input" [attr.type]="type || 'text'" [formControlName]="name" size="30" pInputText />
+        <label for="float-input">{{name | titlecase}}</label>
+    </span>
+</div>

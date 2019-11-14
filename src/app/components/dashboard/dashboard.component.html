@@ -1,0 +1,16 @@
+<img alt="Paris" class="center" src="assets/ll.jpg">
+
+<app-alert [display]="displayAlert" [type]="alertType" [message]="alertMessage" (closeEvent)="closeAlert()">
+</app-alert>
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <p-dropdown [options]="cities2" optionLabel="name" formControlName="location"></p-dropdown>
+    <app-input [name]="'pickUpAddress'" [placeholder]="'pickUpAddress'" [formGroup]="employeeForm">
+    </app-input>
+    <app-input [name]="'dropOffAddress'" [placeholder]="'dropOffAddress'" [formGroup]="employeeForm">
+    </app-input>
+    <app-input [name]="'name'" [placeholder]="'name'" [formGroup]="employeeForm"></app-input>
+    <p-dropdown [options]="cities1" formControlName="requirement"></p-dropdown>
+    <div class="container">
+        <button type="submit" [disabled]="!employeeForm.valid" class="btn btn-info ">$ Get Estimate</button>
+    </div>
+</form>

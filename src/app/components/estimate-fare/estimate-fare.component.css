@@ -1,0 +1,14 @@
+img {
+    width: 80%;
+    margin-left: 9%;
+}
+#loopData {
+    float: left;
+    margin: 20px;
+    margin-left: 4%;
+   border-radius: 20px;
+   box-shadow: 3px;
+}
+#headerTitle {
+   margin-left: 10%;
+}

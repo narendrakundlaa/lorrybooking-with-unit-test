@@ -1,0 +1,34 @@
+<div *ngIf="getName" style="margin-left: 5%;">
+    <h3 class="text-success">Hello ! {{getName}}</h3>
+    <div class="text-warning">Here is your trip fare estimate</div>
+</div>
+<hr>
+
+<app-alert [display]="displayAlert" [type]="alertType" [message]="alertMessage" (closeEvent)="closeAlert()">
+</app-alert>
+<div *ngFor="let item of truckData" id="loopData">
+
+    <p-card [style]="{width: '360px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <div style="margin-left: 18%;">
+                <b>{{item.title}}</b>
+            </div>
+            <img src="{{item.image}}" alt="Ms dhoni" width="200" height="200">
+        </p-header>
+        <div>
+            <div>
+                <b>Capacity: </b>{{item.capacity}}
+            </div>
+            <div>
+                <b>Size: </b>{{item.size}}
+            </div>
+
+            <h2>{{item.price | currency:'INR'}}</h2>
+        </div>
+        <p-footer>
+            <button pButton type="button" label="Proceed to Book" style="margin-right: .25em"
+                (click)="BookIngTruck(item)"></button>
+
+        </p-footer>
+    </p-card>
+</div>
